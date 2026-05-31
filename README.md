@@ -38,3 +38,30 @@ ai-resume-analyzer/
 │   │   └── main.jsx         # Component mounting entrypoint
 │   └── package.json         # Node.js project configurations
 └── .gitignore               # System file exclude filters (prevents tracking .env/.venv)
+---
+
+## 📊 Expected Application Output & Data Schema
+
+### 1. Visual Interface UI
+When a resume and job description are submitted through the React dashboard, the application renders a multi-tier profile analysis:
+- **Match Score**: A prominent dynamic percentage metric indicating overall structural alignment.
+- **Missing Keywords**: Red highlighted badges displaying critical technical phrases or frameworks missing from the profile.
+- **Analysis Summary**: A bulleted breakdown of actionable, context-aware career improvements.
+
+### 2. Structured JSON API Response Data
+The backend FastAPI server enforces a strict data schema. Below is an exact example of the structured JSON payload returned by the Gemini 2.5 Flash integration layer after an evaluation:
+
+```json
+{
+  "match_percentage": 85,
+  "missing_keywords": [
+    "FastAPI",
+    "Asynchronous Programming",
+    "Structured JSON Parsing"
+  ],
+  "summary": [
+    "Successfully demonstrated solid 4th-year Computer Science core skills including React.js state handling.",
+    "Recommended to explicitly mention asynchronous backend pipeline handling and Python virtual environments (.venv) within the technical skills section.",
+    "Strengthen project documentation by outlining the exact data bridge schema between client and server layers."
+  ]
+}
