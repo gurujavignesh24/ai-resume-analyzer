@@ -2,7 +2,7 @@
 
 A full-stack web application designed to help job seekers optimize their profiles. The application parses a user's resume text, cross-references it against a target job description, and interfaces with the **Gemini 2.5 Flash** model to provide real-time metrics, missing keyword lists, and actionable career improvement strategies.
 Live Demo:
-Resume Analyzer
+[Resume Analyzer](https://resumeanalyzer0.netlify.app/?utm_source=chatgpt.com)
 
 ---
 
