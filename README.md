@@ -1,6 +1,8 @@
 # AI-Driven Career Analytics & Resume Profiler
 
 A full-stack web application designed to help job seekers optimize their profiles. The application parses a user's resume text, cross-references it against a target job description, and interfaces with the **Gemini 2.5 Flash** model to provide real-time metrics, missing keyword lists, and actionable career improvement strategies.
+
+
 Live Demo:
 [Resume Analyzer](https://resumeanalyzer0.netlify.app/?utm_source=chatgpt.com)
 
@@ -51,19 +53,6 @@ When a resume and job description are submitted through the React dashboard, the
 - **Analysis Summary**: A bulleted breakdown of actionable, context-aware career improvements.
 
 ### 2. Structured JSON API Response Data
-The backend FastAPI server enforces a strict data schema. Below is an exact example of the structured JSON payload returned by the Gemini 2.5 Flash integration layer after an evaluation:
+The backend FastAPI server enforces a strict data schema. Below is an exact example of the structured JSON payload returned by the Gemini 2.5 Flash integration layer after an evaluation
 
-```json
-{
-  "match_percentage": 85,
-  "missing_keywords": [
-    "FastAPI",
-    "Asynchronous Programming",
-    "Structured JSON Parsing"
-  ],
-  "summary": [
-    "Successfully demonstrated solid 4th-year Computer Science core skills including React.js state handling.",
-    "Recommended to explicitly mention asynchronous backend pipeline handling and Python virtual environments (.venv) within the technical skills section.",
-    "Strengthen project documentation by outlining the exact data bridge schema between client and server layers."
-  ]
-}
+
